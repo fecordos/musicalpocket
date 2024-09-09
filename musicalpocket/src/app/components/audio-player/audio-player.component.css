@@ -1,0 +1,131 @@
+/*Basic styles*/
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+mat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  border: 1px solid #000;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+}
+
+mat-card-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  flex-grow: 1;
+  color: rgba(188, 8, 97, 255);
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+mat-card-content,
+mat-form-field,
+mat-label {
+  width: 100%;
+}
+
+mat-form-field {
+  margin-top: 15px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 15px;
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+.repeat-control {
+  margin-left: 10px;
+}
+
+.repeat-control > button {
+  height: 57px;
+  width: 57px;
+  margin-top: 5px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(241, 243, 244, 255);
+  color: #000;
+}
+
+/*Small screens (mobile devices)*/
+@media (max-width: 600px) {
+  mat-card {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  mat-card-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  audio {
+    max-width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .repeat-control {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  mat-card {
+    max-width: 500px;
+  }
+
+  mat-card-title {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  audio {
+    max-width: 100%;
+  }
+}
